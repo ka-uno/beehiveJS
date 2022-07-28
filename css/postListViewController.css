@@ -1,0 +1,23 @@
+.postListViewController {
+    background-color: blueviolet;
+    left: 20px;
+}
+
+.postListViewController_navbarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.postListViewController_navbarContainer_backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tercery-color);
+    position: absolute;
+    left: 20px;
+    color: white;
+    height: 30px;
+    width: 60px;
+}
