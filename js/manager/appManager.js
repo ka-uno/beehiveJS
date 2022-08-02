@@ -1,5 +1,5 @@
-import {} from "../viewControllers/postList/postListViewController.js";
-import { UsersListViewController } from "../viewController/usersListViewController";
+import { PostListViewController } from "../viewControllers/postList/postListViewController.js";
+import { UserListViewController } from "../viewControllers/userList/userListViewController.js";
 
 export class AppManager {
     constructor() {

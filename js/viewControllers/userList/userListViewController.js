@@ -3,17 +3,17 @@ import { UserListService } from "./userListService.js";
 
 export class UserListViewController extends ViewController {
     constructor(parent) {
-            super(parent);
-            this.service = new UserListService(this);
-            this.mainContainer.classList.add('userListViewController');
-        }
-        //con funcion flecha. Se invoca x cada elemento del arreglo
-        // el arrow func guarda el contexto de donde se creo
-        // showContent(data) {
-        //     data.forEach(user => {
-        //         console.log(data)
-        //     });
-        // }
+        super(parent);
+        this.service = new UserListService(this);
+        this.mainContainer.classList.add('userListViewController');
+    }
+    //con funcion flecha. Se invoca x cada elemento del arreglo
+    // el arrow func guarda el contexto de donde se creo
+    // showContent(data) {
+    //     data.forEach(user => {
+    //         console.log(data)
+    //     });
+    // }
 
 
     //LA MANERA TRADUCIONAL SERIA: 

@@ -17,7 +17,7 @@
 
 .contentContainer {
     background-color: var(--content-background-color);
-    /* position: fixed; */
+    position: fixed;
     top: var(--navbar-height);
     width: 100%;
     height: calc(100% - var(--navbar-height));

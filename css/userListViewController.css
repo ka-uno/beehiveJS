@@ -1,10 +1,11 @@
     .userListViewController {}
-    
+
     .userListViewController_userContainer {
         height: 150px;
         width: calc(100% - var(--space-double));
         background-color: rgb(188, 188, 188);
         margin-bottom: var(--space);
         margin-left: var(--space);
+        margin-right: var(--space);
         border-radius: 5px;
     }
