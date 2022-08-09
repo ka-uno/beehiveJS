@@ -1,19 +1,22 @@
+import { UserView } from "../../views/userView/userView.js";
 import { ViewController } from "../viewController.js";
 import { UserListService } from "./userListService.js";
 
 export class UserListViewController extends ViewController {
-    constructor(parent) {
-        super(parent);
-        this.service = new UserListService(this);
-        this.mainContainer.classList.add('userListViewController');
-    }
-    //con funcion flecha. Se invoca x cada elemento del arreglo
-    // el arrow func guarda el contexto de donde se creo
-    // showContent(data) {
-    //     data.forEach(user => {
-    //         console.log(data)
-    //     });
-    // }
+    constructor(parent, appManager) {
+            super(parent, appManager);
+            this.service = new UserListService(this);
+            this.mainContainer.classList.add('userListViewController');
+            this.navbarContainer.classList.add('userListViewController_navbarContainer')
+            this.navbarContainer.innerHTML = 'USERS';
+        }
+        //con funcion flecha. Se invoca x cada elemento del arreglo
+        // el arrow func guarda el contexto de donde se creo
+        // showContent(data) {
+        //     data.forEach(user => {
+        //         console.log(data)
+        //     });
+        // }
 
 
     //LA MANERA TRADUCIONAL SERIA: 
@@ -34,20 +37,13 @@ export class UserListViewController extends ViewController {
     // }
 
     showContent(data) {
-        this.contentContainer.classList.remove('contentContainer_loading');
-        this.contentContainer.innerHTML = '';
-
+        super.showContent(data);
         data.forEach((user) => {
-
-            //crea los p o div
-            var userContainer = document.createElement('div');
-
-            // rellena los p
-            userContainer.innerHTML = user.name;
-            userContainer.className = 'userListViewController_userContainer';
-            // mete el username dentro del contentContainer
-            this.contentContainer.appendChild(userContainer);
-            //console.log(data)
+            var userView = new UserView(this.contentContainer, user, this.appManager);
         });
+
+    }
+    showUserPosts(user) {
+
     }
 }

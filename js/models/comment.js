@@ -4,7 +4,5 @@ export class Comment {
         this.body = body;
         this.title = title;
         this.userId = userId;
-
     }
-
 }

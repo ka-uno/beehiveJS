@@ -6,13 +6,18 @@
 */
 
 :root {
-    --primary-color: #263238;
-    --secondary-color: #f50057;
-    --content-background-color: #eaeaea;
+    --primary-color: #321911;
+    --secondary-color: #5d4037;
+    --tercery-color: #8b6b61;
+    --content-background-color: #f2f2f2;
     --navbar-height: 60px;
     --space: 20px;
     --space-double: calc(var--(space)+ var(--space));
     --fade-background-color: #00000081;
+    --user-view-background-color: #dadada;
+    --user-view-text-size: 12px;
+    --post-view-background-color: #bababa;
+    --comment-view-background-color: #979797;
 }
 
 * {
@@ -36,11 +41,13 @@ h2 {
 button {
     min-width: 68px;
     border-style: none;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
     color: white;
     background-color: var(--secondary-color);
-    outline: none
+    outline: none;
+    border-radius: 5px;
+    font-size: 11px;
 }
 
 button:focus {
@@ -51,4 +58,8 @@ button:focus {
     background-color: var(--primary--color);
     width: 100vw;
     height: 100vh;
+}
+
+.hide {
+    display: none !important;
 }

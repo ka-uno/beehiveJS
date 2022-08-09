@@ -1,2 +1,0 @@
-# beehiveJS
-Chat app
