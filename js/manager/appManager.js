@@ -26,6 +26,7 @@ export class AppManager {
                 break;
             case 'postListViewController':
                 this.postListViewController.moveOut();
+                this.postListViewController = null;
                 break;
             case 'todosListViewController':
                 break;
