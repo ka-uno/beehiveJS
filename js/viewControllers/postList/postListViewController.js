@@ -28,6 +28,6 @@ export class PostListViewController extends ViewController {
     }
 
     onBackBtn() {
-        this.appManager.onBackBtn('postListViewControler');
+        this.appManager.onBackBtn('postListViewController');
     }
 }
